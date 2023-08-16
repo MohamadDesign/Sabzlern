@@ -46,7 +46,7 @@ export default function Input(props) {
     ) : (
       <textarea
         placeholder={props.placeholder}
-        className={`${props.className} ${mainInput.isValid ? 'success' : 'error'}`}
+        className={`${props.className} ${mainInput.isValid ? 'success ' : 'error'}`}
         onChange={onChangeHandler}
         value={mainInput.value}
       />
